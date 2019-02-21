@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Dropdown Navbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav{
+            background-color: coral;
+            padding: 5px;
+            box-shadow: 0 0 10px black;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 10px 25px;
+            display: inline-block;
+        }
+        nav a:hover{
+            background-color: darkred;
+            color: white;
+        }
+        .dropdown{
+            display: inline-block;
+        }
+        .dropdown-list{
+            position: absolute;
+            background-color: coral;
+            padding: 5px;
+            width: 150px;
+            display: none;
+        }
+        .dropdown-list a{
+            display: block;
+        }
+        .dropdown:hover .dropdown-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown Navbar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Careers</a>
+        <div class="dropdown">
+            <a href="#">Courses <i class="fa fa-caret-down"></i> </a>
+            <div class="dropdown-list">
+                <a href="#">Java</a>
+                <a href="#">Python</a>
+                <a href="#">PHP</a>
+                <a href="#">.NET</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>

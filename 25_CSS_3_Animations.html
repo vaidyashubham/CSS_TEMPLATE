@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        #simple{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            border: 20px solid seagreen;
+            box-shadow:  0 0 10px black;
+            animation: simple 2s infinite linear;
+        }
+        @keyframes simple {
+            0% , 50%, 100%{
+                background-color: lightgreen;
+                border-color: seagreen;
+            }
+            25% , 75%{
+                background-color: seagreen;
+                border-color: lightgreen;
+            }
+        }
+
+        #spin{
+            width: 100px;
+            height: 100px;
+            border: 20px solid coral;
+            border-radius: 50%;
+            border-top: 20px solid darkred;
+            box-shadow: 0 0 10px black;
+            animation: spin 2s infinite linear;
+        }
+        @keyframes spin {
+            0%{ transform: rotate(0deg)}
+            100%{ transform: rotate(360deg)}
+        }
+        #news{
+            background-color: orange;
+            padding: 5px;
+            width: 100%;
+            font-size: 20px;
+            margin: auto;
+            overflow: hidden;
+        }
+        #news p{
+            margin: 0;
+            animation: news 10s infinite linear;
+        }
+        @keyframes news {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        #animate{
+            margin-bottom: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            box-shadow: 0 0 10px black;
+            position: relative;
+            animation: animate 4s infinite linear;
+        }
+        @keyframes animate {
+            0%{
+                top: 0;
+                left: 0;
+                transform: rotate(0deg);
+                border-radius: 0%;
+            }
+            25%{
+                top: 0;
+                left: 200px;
+                transform: rotate(90deg);
+                border-radius: 50%;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                transform: rotate(180deg);
+                border-radius: 0%;
+            }
+            75%{
+                top: 200px;
+                left: 0;
+                transform: rotate(270deg);
+                border-radius: 50%;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotate(360deg);
+                border-radius: 0%;
+            }
+        }
+        #football{
+            height: 300px;
+            animation: football 4s infinite linear;
+            position: relative;
+            background: transparent;
+        }
+        @keyframes football {
+            0% {
+                bottom: 10px;
+                margin-left: 0px;
+                width: 100px;
+                height: 175px;
+            }
+            50% {
+                bottom: 300px;
+                margin-left: 310px;
+                width: 200px;
+                height: 225px;
+                }
+            100% {
+                bottom: 100px;
+                margin-right: 230px;
+                width: 60px;
+                height: 75px;
+                }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div id="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div id="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div id="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div id="animate"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div id="football">
+        <img src="img/ball-clip-art.jpg">
+    </div>
+
+</body>
+</html>

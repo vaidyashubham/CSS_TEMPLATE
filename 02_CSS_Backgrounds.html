@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        #bgImage{
+            width: 500px;
+            box-shadow: 0 0 15px black;
+            padding: 10px;
+            color: white;
+            background-image: url("img/image4.jpeg");
+        }
+        #bgPosition{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 15px black;
+            background-position: ;
+            background: lightsalmon url("img/nature.jpg") no-repeat scroll right top;
+        }
+        #bgRepeat{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 15px black;
+            background-position: ;
+            background: lightsalmon url("img/nature.jpg") repeat-x scroll right top;
+        }
+        #bgAttachment{
+            height: 300px;
+            box-shadow: 0 0 15px black;
+            background: white url("img/image2.jpeg") no-repeat fixed center;
+        }
+        #gradient1{
+            width: 500px;
+            box-shadow: 0 0 15px black;
+            padding: 15px;
+            background: linear-gradient(black,white,black);
+        }
+        #gradient2{
+            width: 500px;
+            box-shadow: 0 0 15px black;
+            padding: 15px;
+            background: linear-gradient(to right,black,white,black);
+        }
+        #gradient3{
+            width: 500px;
+            box-shadow: 0 0 15px black;
+            padding: 15px;
+            background: linear-gradient(to right bottom,black,white,black);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BACKGROUND COLOR -->
+    <h2 style="background-color: teal">I am Teal color Background</h2>
+
+    <!-- BACKGROUND IMAGE -->
+    <h2>BACKGROUND IMAGE</h2>
+    <div id="bgImage">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi architecto atque blanditiis, cupiditate delectus distinctio est et eum exercitationem ipsam labore laboriosam magni minus modi molestiae mollitia necessitatibus neque nihil optio perferendis quam quos sapiente sunt suscipit ullam vero?</p>
+    </div>
+
+    <!-- BACKGROUND ATTACHMENT -->
+    <h2>BACKGROUND ATTACHMENT</h2>
+    <div id="bgAttachment"></div>
+
+    <!-- BACKGROUND POSITION -->
+    <h2>BACKGROUND POSITION</h2>
+    <div id="bgPosition"></div>
+
+    <!-- BACKGROUND REPEAT -->
+    <h2>BACKGROUND REPEAT</h2>
+    <div id="bgRepeat"></div>
+
+<!---Linear-graadient--->
+<h2>Linear Gradient1</h2>
+<div id="gradient1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate et perspiciatis quae ratione. Commodi doloremque eum explicabo id iste maxime mollitia officia quaerat suscipit voluptatum. At consequuntur eligendi, ipsam iure minima necessitatibus pariatur repellat vel. Eveniet libero sed voluptatibus? Cum expedita fugiat iusto, quod repellat tempora temporibus totam! Quasi!
+    </p>
+</div>*
+
+    <!---Linear-graadient--->
+    <h2>Linear Gradient2</h2>
+    <div id="gradient2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate et perspiciatis quae ratione. Commodi doloremque eum explicabo id iste maxime mollitia officia quaerat suscipit voluptatum. At consequuntur eligendi, ipsam iure minima necessitatibus pariatur repellat vel. Eveniet libero sed voluptatibus? Cum expedita fugiat iusto, quod repellat tempora temporibus totam! Quasi!
+        </p>
+    </div>*
+
+    <!---Linear-graadient--->
+    <h2>Linear Gradient3</h2>
+    <div id="gradient3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate et perspiciatis quae ratione. Commodi doloremque eum explicabo id iste maxime mollitia officia quaerat suscipit voluptatum. At consequuntur eligendi, ipsam iure minima necessitatibus pariatur repellat vel. Eveniet libero sed voluptatibus? Cum expedita fugiat iusto, quod repellat tempora temporibus totam! Quasi!
+        </p>
+    </div>*
+
+</body>
+</html>

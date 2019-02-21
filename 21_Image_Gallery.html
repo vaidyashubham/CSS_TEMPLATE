@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        section{
+            text-align: center;
+        }
+        .image{
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .image:hover{
+            box-shadow: 0 0 10px black;
+        }
+        .image img{
+            width: inherit;
+            height: 200px;
+            border-radius: inherit;
+        }
+        .desc{
+            padding: 10px;
+        }
+        /* ----------------- Image Zoom ---------------- */
+        .image{
+            width: 300px;
+            height: 280px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+            overflow: hidden;
+        }
+        .image img{
+            width: inherit;
+            height: 225px;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+        .image:hover img{
+            transform: scale(1.2,1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="zoom">
+    <h1>Image Gallery</h1>
+
+    <div class="image">
+        <img src="img/image4.jpeg">
+        <div class="desc">Image 1</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image6.jpeg">
+        <div class="desc">Image 2</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image5.jpeg" >
+        <div class="desc">Image 3</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image4.jpeg">
+        <div class="desc">Image 4</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image6.jpeg">
+        <div class="desc">Image 5</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image5.jpeg" >
+        <div class="desc">Image 6</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image6.jpeg">
+        <div class="desc">Image 7</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image4.jpeg">
+        <div class="desc">Image 8</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image6.jpeg">
+        <div class="desc">Image 9</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image5.jpeg">
+        <div class="desc">Image 10</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image6.jpeg">
+        <div class="desc">Image 11</div>
+    </div>
+
+    <div class="image">
+        <img src="img/image3.jpeg">
+        <div class="desc">Image 12</div>
+    </div>
+</section>
+
+</body>
+</html>

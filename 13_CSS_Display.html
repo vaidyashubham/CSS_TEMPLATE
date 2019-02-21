@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS DISPLAY</title>
+    <style>
+
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        div{
+            padding: 10px;
+            margin: 10px;
+        }
+        h3{
+            background-color: orange;
+            padding: 5px;
+            margin: 5px;
+            display: inline;
+        }
+        span{
+            background-color: lightsalmon;
+            padding: 5px;
+            margin: 5px;
+            display: block;
+        }
+        a{
+            background-color: #55acee;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            display: block;
+        }
+        form{
+            background-color: dodgerblue;
+            padding: 5px;
+            margin: 5px;
+        }
+        input{
+            display: block;
+            margin: 5px;
+        }
+        h1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- DISPLAY INLINE -->
+    <div>
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+        <h3>JS</h3>
+        <h3>BS</h3>
+    </div>
+
+
+
+    <!-- Display Block -->
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <span >1. At aut beatae cum cumque dolore exercitationem facere in ipsum itaque, </span>
+            <span >2. iure libero maiores minus nisi odio sed temporibus totam veniam! Consequuntur!</span>
+            <span >3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            At aut beatae cum cumque dolore exercitationem facere in ipsum itaque,
+            iure libero maiores minus nisi odio sed temporibus totam veniam! Consequuntur!
+        </p>
+    </div>
+
+    <!-- DISPLAY BLOCK -->
+    <div class="div_block">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Careers</a>
+    </div>
+
+    <!-- DISPLAY BLOCK -->
+    <div>
+        <form>
+            <input type="text" placeholder="User Name">
+            <input type="password" placeholder="Password">
+            <input type="submit">
+        </form>
+    </div>
+
+    <!-- DISPLAY NONE / HIDDEN -->
+    <div>
+        <h1>I am Hidden</h1>
+    </div>
+
+
+</body>
+</html>
